@@ -1,0 +1,387 @@
+
+/* #region Defaiult Resets */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  width: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  max-width: 100vw !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* #endregion Default Resets */
+
+/* #region  Global Variables */
+
+/* #endregion Global Variables */
+
+/* #region  Utility Classes */
+
+/* #endregion Utility Classes */
+
+/* #region  State Rules */
+
+/* #endregion State Rules */
+
+/* #region  Base Rules */
+
+/* #endregion Base Rules */
+
+/* #region  Layout Rules */
+
+/* #endregion Layout Rules */
+
+/* #region  Module Rules */
+
+/* #endregion Middle Box */
+
+/* #endregion Module Rules */
+
+/* #region  Component Rules */
+
+/* #endregion  Component Rules */
+
+/* #region  Media Queries */
+
+/* #region  Media Queries Min-Width 769px */
+@media only screen and (min-width: 769px) {
+  /* #region  Large Cards */
+  .o_large_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3 22.5%);
+    grid-template-areas:
+      "onelgcard twolgcard threelgcard"
+      "fourlgcard fivelgcard sixlgcard"
+      "sevenlgcard eightlgcard .";
+    grid-gap: 30px;
+    justify-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+  }
+
+  .m_container.one {
+    grid-area: onelgcard;
+    max-width: 100%;
+  }
+
+  .m_container.two {
+    grid-area: twolgcard;
+  }
+
+  .m_container.three {
+    grid-area: threelgcard;
+  }
+
+  .m_container.four {
+    grid-area: fourlgcard;
+  }
+
+  .m_container.five {
+    grid-area: fivelgcard;
+  }
+
+  .m_container.six {
+    grid-area: sixlgcard;
+  }
+
+  .m_container.seven {
+    grid-area: sevenlgcard;
+  }
+
+  .m_container.eight {
+    grid-area: eightlgcard;
+  }
+
+  .m_container_bgimage {
+    position: relative;
+    max-width: inherit;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .a_container_bgimage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: right top;
+  }
+
+  .lge_cards_title {
+    color: red;
+    font-size: 24px;
+    font-weight: 900;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+  }
+
+  .img_textarea {
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    line-height: 20px;
+    left: 20px;
+    font-family: sans-serif;
+  }
+
+  .a_lge_one {
+    font-size: 0.8rem;
+    font-family: sans-serif;
+  }
+
+  .a_lge_two {
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+  }
+
+  .a_lge_three {
+    font-size: 0.8rem;
+    word-spacing: 0.2rem;
+  }
+
+  .text_block {
+    height: auto;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 65% auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: "textblock image-a";
+    background-color: pink;
+    padding-left: 20px;
+    color: red;
+    font-size: 1.5rem;
+    line-height: 1em;
+  }
+
+  .text_block_sideimg {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top right;
+  }
+
+  .my_img_side {
+    grid-area: image-a;
+  }
+
+  .my_text_side {
+    grid-area: textblock;
+    font-size: 12px;
+  }
+
+  .my_text_side_line1 {
+    line-height: 1.4rem;
+    grid-area: textblock;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .my_text_side_line2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.2rem;
+    grid-area: textblock;
+    font-size: 12px;
+  }
+
+  .m_large_cards_list {
+    margin-left: 15px;
+  }
+
+  .m_large_cards_list > li {
+    border-bottom: 1px solid red;
+    padding: 0.5rem;
+    color: dimgray;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1rem;
+  }
+
+  .m_large_cards_list li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+  /* #endregion  Large Cards */
+}
+
+/* #endregion Media Queries Min-Width 769px */
+
+/* #region Media Queries Tablet Max Width 768px */
+@media only screen and (max-width: 768px) {
+  .o_large_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4 1fr);
+    grid-template-areas:
+      "onelgcard twolgcard"
+      "threelgcard fourlgcard"
+      "fivelgcard sixlgcard"
+      "sevenlgcard eightlgcard"
+    grid-gap: 10px;
+    justify-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+  .a_container_bgimage{
+    minmax(max-content, 200px);
+  }
+  
+  
+}
+
+/* #endregion Media Queries Tablet Max Width 768px */
+
+/* #region  Media Queries Moile Max Width 320px */
+@media only screen and (max-width: 320px) {
+}
+
+/* #endregion Media Queries Mobile Max Width 320px */
+
+/* #endregion Media Queries */
